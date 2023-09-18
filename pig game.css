@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to top left, #a8107f, #ef8fd5);
+  text-align: center;
+}
+
+.container {
+  height: 80%;
+  width: 60%;
+  background-color: #f19edc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px black;
+  position: relative;
+}
+
+.player {
+  font-size: 50px;
+}
+
+.semi-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  height: 100%;
+  padding: 70px 0;
+}
+
+.score {
+  font-size: 80px;
+  color: rgb(216, 63, 13);
+}
+
+.down-score {
+  align-self: flex-end;
+  background-color: rgb(216, 63, 13);
+  color: white;
+  padding: 20px 40px;
+  font-size: 30px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.row {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.passive {
+  background-color: #2b1526;
+}
+
+.newGame,
+.dice,
+.hold,
+.winner {
+  white-space: nowrap;
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: aliceblue;
+  width: 140px;
+  cursor: pointer;
+}
+
+.newGame {
+  margin-top: 30px;
+}
+
+.winner {
+  margin-top: 280px;
+  display: none;
+  width: 200px;
+}
+
+.dice {
+  bottom: 200px;
+}
+
+.hold {
+  bottom: 100px;
+}
+
+.dice-img img {
+  bottom: 400px;
+  /* width: auto; */
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
